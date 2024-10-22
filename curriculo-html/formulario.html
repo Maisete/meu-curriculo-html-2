@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Freelance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <form>
+        <fieldset class="border p-4">
+            <legend class="w-auto">Informações Pessoais</legend>
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome e Sobrenome:</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+            </div>
+
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+        </div>
+            
+            <div class="mb-3">
+                <label for="idioma" class="form-label">Idioma:</label>
+                <select class="form-select" id="idioma" required>
+                    <option value="Inglês">Inglês</option>
+                    <option value="Espanhol">Espanhol</option>
+                    <option value="Francês">Francês</option>
+                    <option value="Português">Português (pt-br)</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="arquivo" class="form-label">Upload de Arquivo:</label>
+                <input type="file" class="form-control" id="arquivo" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Linguagens Preferidas:</label>
+                <select multiple class="form-select">
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="PHP">PHP</option>
+                </select>
+            </div>
+
+        <div class="mb-3">
+            <label class="form-label">Banco de Dados Recomendado:</label><br>
+            <input type="radio" name="banco" value="MySQL" required> MySQL<br>
+            <input type="radio" name="banco" value="PostgreSQL" required> PostgreSQL<br>
+            <input type="radio" name="banco" value="MongoDB" required> MongoDB<br>
+            <input type="radio" name="banco" value="N/A" required> N/A<br>
+            <input type="radio" name="banco" value="Outra" required> Outra<br>
+        </div>
+
+            <div class="mb-3">
+                <label for="turno" class="form-label">Turno de Preferência para Reuniões:</label>
+                <select class="form-select" id="turno" required>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="horario" class="form-label">Melhor Horário para Reuniões:</label>
+                <input type="time" class="form-control" id="horario" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="previsao" class="form-label">Previsão de Entrega:</label>
+                <input type="date" class="form-control" id="previsao" required>
+            </div>
+
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </fieldset>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
